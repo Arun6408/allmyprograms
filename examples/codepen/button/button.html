@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buttons</title>
+        <style>
+            body{
+                background-color: #e0e5ec;
+            }
+            h1{
+                color: #353535;
+                text-align: center;
+                position: relative;
+                font-size: 50px;
+                font-family: "Cormorant Garamond", serif;
+            }
+            
+            p{
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                text-align: center;
+                font-size: 20px;
+                color: #676767;
+            }
+            .frame{
+                width: 90%;
+                margin: 40px auto;
+                text-align: center;
+            }
+            .button{
+                margin: 20px;
+            }
+            .but{
+                width: 130px;
+                height: 40px;
+                color: #fff;
+                border-radius: 5px;
+                display: inline-block;
+                    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                        7px 7px 20px 0px rgba(0,0,0,0.1),
+                        4px 4px 5px 0px rgba(0, 0, 0,0.1);
+                text-decoration: none;
+                text-align: center;
+                border: none;
+                font-family: 'Lato', sans-serif;
+                padding: 10px 25px;
+                font-weight: 500;
+                background: transparent;
+                cursor: pointer;
+                margin: 20px;
+                transition: all 0.3s ease;
+            }
+            .but-1{
+                background-color: rgb(6,14,131);
+                background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+            }
+            .but-1:hover{
+                background: rgb(0,3,255);
+                background: linear-gradient(0deg,rgba(0,3,255,1) 0%,rgba(2,126,251,1) 100%);
+            }
+
+
+            .but-2{
+                background: rgb(96,9,240);
+                background: linear-gradient(0deg,rgba(96,9,240,1)0% , rgba(129,5,249,1)100%);
+            }
+            .but-2:hover{
+                box-shadow:  4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+                           -4px -4px 6px 0 rgba(116, 125, 136,0.5), 
+                    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+                    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+            }
+            .but-3{
+                background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+                padding: 0;
+                line-height: 42px;
+            }
+            .but-3 span{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: block;
+            }
+            .but-3:before,.but-3:after{
+                position: absolute;
+                content: "";
+                height: 0%;
+                width: 1px;
+                box-shadow:
+                -1px -1px 20px 0px rgba(255,255,255,1),
+                -4px -4px 5px  0px rgba(255,255,255,1),
+                 7px  7px 20px 0px rgba(0,0,0,.4),
+                 4px  4px 5px  0px rgba(0,0,0,.3);
+            }
+            .but-3:before{
+                right: 0px;
+                top: 0px;
+                transition: all 0.5s ease;
+            }
+            .but-3:after{
+                left: 0; bottom:0;
+                transition: all .5s ease;
+            }
+            .but-3:hover{
+                background: transparent;
+                color: #76aef1;
+                transition: all .5s ease;
+            }
+            .but-3:hover:before {
+                transition: all .5s ease;
+                height: 100%;
+            }
+            .but-3:hover:after{
+                transition: all .5s ease;
+                height: 100%;
+            }
+            .but-3 span:before{
+                left: 0; top: 0; width: 0%; height: .5px;
+                transition: all .5s ease;
+            }
+            .but-3 span::after{
+                right: 0; bottom: 0; width: 0%; height: .5px;
+                transition: all .5s ease;
+                
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Animation Buttons</h1>
+    <div class="frame">
+        <button class="but but-1">Click me</button>
+        <button class="but but-2">Click me</button>
+        <button class="but but-3"><span>Point on me</span></button>
+
+    </div>
+    </body>
+</html>
