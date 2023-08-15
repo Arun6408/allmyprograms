@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,intial-scale=1.0">
+        <title>Responsive Website</title>
+        <link rel="icon" herf="favicon/favicon (1).ico" type="image/x-icon">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                background-color: black;
+            }
+            .header1{
+                background-color: rgb(35, 35, 35);
+                width: 100%;
+            }
+            .menu{
+                float: left;
+                background-color:   rgb(35, 35, 35);
+                width: 15%;
+                height: 27vw;
+            }
+            @font-face {
+                font-family: 'roboto';
+                src: url("fonts/EG_GARAMOND/EBGaramond-Italic-VariableFont_wght.ttf") format('truetype');
+            }
+            .menuitem{
+                color: white;
+                font-family: 'roboto',cursive;
+                padding:10px;
+                display: block;
+            }
+            .container{
+                background-color:   rgb(35, 35, 35);
+                padding: 0px 5px;
+                width: 70%;
+                float: left;
+                overflow:hidden ;
+                height: 27vw;
+            }
+            .conitem{
+                color: white;
+                padding:5px;
+            }
+            .sideitem{
+                color: white;
+            }
+            .sidebox{
+                background-color: cadetblue;
+                width:15%;
+                float: left;
+                overflow: hidden;
+                height: 27vw;
+            }
+            @media only screen and (max-width: 1200px){
+                .menu{
+                    width: 20%;
+                }
+                .container{
+                    width: 80%;
+                }
+                .sidebox{
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 500px) {
+                .menu,.container,.sidebox{
+                    width: 100%;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header1">
+            <h1 style="font-size: 2vw; color:white; ">This Heading Dont change with change in size</h1>
+            <p style="font-size: 20px; color:white; ">Resize your window to see changes</p>
+        </div>
+        <div class="menu" >
+            <div class="menuitem" style="border-bottom:2px solid rgb(112, 24, 15);">Home</div>
+            <div class="menuitem" style="border-bottom:2px solid rgb(112, 24, 15);">Menu</div>
+            <div class="menuitem" style="border-bottom:2px solid rgb(112, 24, 15);">Services</div>
+            <div class="menuitem">About</div>
+        </div>
+        <div class="container">
+            <h class="conitem">Paris</h><br>
+            <p class="conitem">Paris is a very beautiful city.</p>
+            <picture>
+                <source srcset="images/paris1.jpg" media="(max-width: 500px)" >
+                <source srcset="images/car2.jpg" media="(max-width: 1200px)" >
+                <source srcset="images/car3.jpg" >
+                <img src="images/car1.jpg" alt="Paris" style="max-height: auto; max-width: 50%;">
+              </picture>            
+        </div>
+        <div class="sidebox">
+            <h4 class="sideitem">What is it?</h4>
+            <p class="sideitem">there are many things to see in paris.</p>
+            <h4 class="sideitem">What's best in this?</h4>
+            <p class="sideitem">Efil tower is the best place to visit.</p>
+        </div>
+        <div class="footer">
+            <p style="color: white;text-align: center;font-size: 1vw;">This is all about paris there are many things to know more lets meet in another wed page until then bye :)</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button with Hover Effect</title>
+  <style>
+    #login {
+      color: #fff;
+      background: linear-gradient(45deg, #b66eff, #4d0073);
+      cursor: pointer;
+      position: relative;
+      border: none;
+      outline: none;
+      font-size: 1.25em;
+      font-weight: 500;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    #login::before {
+      content: "";
+      position: absolute;
+      background: #ffffff;
+      top: 0;
+      left: -100%;
+      opacity: 0.3;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+    #login:hover::before {
+      left: 0;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <button id="login">Hover Me</button>
+</body>
+</html>

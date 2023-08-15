@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive2</title>
+        <style>
+            .header{
+                background-color: rgb(0, 155, 0);
+                padding: 1vw;
+            }
+            .d1,.d2,.d3{
+                float: left;
+                width: 33%;
+            }
+            @media only screen and (max-width: 300px){
+                .d1,.d2 ,.d3{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h2 style="color: white;font-size: 3vw;">W3.CSS Demo</h2>
+            <p style="font-size: 2vw;color: white;">Resize the page to see the responsiveness!</p>
+        </div>
+        <div class="d1">
+            <h2 style="font-size: 2vw;" >London</h2>
+            <p style="font-size: 1.2vw;">London is the capital city of England</p>
+            <p style="font-size: 1.2vw;">It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+        <div class="d2">
+            <h2 style="font-size: 2vw;">Paris</h2>
+            <p style="font-size: 1.2vw;">Paris is the capital of France.</p>
+            <p style="font-size: 1.2vw;">The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+        </div>
+        <div class="d3">
+            <h2 style="font-size: 2vw;">Tokyo</h2>
+            <p style="font-size: 1.2vw;">Tokyo is the capital of Japan.</p>
+            <p style="font-size: 1.2vw;">It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+        </div>
+    </body>
+</html>
